@@ -1,9 +1,12 @@
-streamlit
-torch
-torchvision
+streamlit              # the web framework
+# — core ML / data —
+torch==2.0.1+cpu
+torchvision==0.15.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 pandas
 numpy
+pillow                 # PIL
 matplotlib
-Pillow
-captum
-pytorch-grad-cam
+scikit-learn
+captum                 # optional, for IG
+pytorch_grad_cam
