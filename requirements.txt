@@ -1,7 +1,6 @@
-# ---------- web ----------
-streamlit
+streamlit                              # web UI
 
-# ---------- ML stack ----------
+# -------- core ML stack ----------
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.7.1+cpu
 torchvision==0.22.1+cpu
@@ -11,5 +10,5 @@ numpy
 pillow
 matplotlib
 scikit-learn
-captum        # optional, for Integrated Gradients
+captum                                 # for Integrated Gradients
 git+https://github.com/jacobgil/pytorch-grad-cam.git
