@@ -1,12 +1,15 @@
-streamlit              # the web framework
-# — core ML / data —
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
+# ---------- web ----------
+streamlit
+
+# ---------- ML stack ----------
 --extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+
 pandas
 numpy
-pillow                 # PIL
+pillow
 matplotlib
 scikit-learn
-captum                 # optional, for IG
-pytorch_grad_cam
+captum        # optional, for Integrated Gradients
+git+https://github.com/jacobgil/pytorch-grad-cam.git
