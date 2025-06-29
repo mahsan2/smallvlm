@@ -5,6 +5,10 @@ import torch.nn.functional as F
 from torchvision import models, transforms
 from PIL import Image
 import matplotlib.pyplot as plt
+# --- at the very top of app.py, **before** torch.load -----------------
+from sklearn.preprocessing import StandardScaler
+import torch.serialization
+torch.serialization.add_safe_globals([StandardScaler])   # <- allow-list
 
 # ------------------------------
 # Load model + data
